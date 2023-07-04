@@ -1,6 +1,6 @@
 #  Inkplate Maker Faire Wall
 
-![Inkplate Maker Faire Wall](https://i.imgur.com/dBmoz9e.jpg)
+![Inkplate Maker Faire Wall](https://raw.githubusercontent.com/SolderedElectronics/Inkplate-Maker-Faire-Wall/main/images/makerfairewall.JPG)
 
 As seen at Maker Faire Vienna 2023, the Inkplate Make Faire Wall is a large display made from *60* Inkplate 10's!. Yes, 60.
 It's ~2.24 meters wide and ~1 meter tall. The total resolution is 13170x5630 px.
@@ -18,7 +18,7 @@ Everything which is required to make it run is included in this repository. You 
 
 ### Schematic
 Below is the schematic of how everything is connected:
-![Inkplate Maker Faire Wall Schematic](https://i.imgur.com/1kXRLmT.png)
+![Inkplate Maker Faire Wall Schematic](https://raw.githubusercontent.com/SolderedElectronics/Inkplate-Maker-Faire-Wall/main/images/inkplate_wall_schematic.png)
 
 ### The Sketch
 All Inkplates are running the same sketch (inkplate_makerfaire_wall.ino). This sketch is used to recieve commands via serial to switch the operation mode and also to configure each Inkplate. The configuration process involves defining which display on the wall they represent (00, 01, 02... from left to right, top to bottom. On the bottom right is display 59). This is then stored in EEPROM. This way, each Inkplate knows the segment of the image (and thus, the filename) that it has to show. Then, sending the root filename of the image via serial to each Inkplate will trigger that image being shown on them.

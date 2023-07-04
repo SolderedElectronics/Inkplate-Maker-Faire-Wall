@@ -2,6 +2,7 @@
 # It doesn't happen simultaneously in parallel, but it's fast enough
 # Really useful if you need to change something in the main sketch and quickly upload it
 
+# Import the required libraries
 import sys
 import glob
 import serial

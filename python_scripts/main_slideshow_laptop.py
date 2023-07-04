@@ -3,6 +3,7 @@
 # Connect this laptop to the secondary one via a single Ethernet cable so they can communicate
 # First start the secondary_slideshow_laptop.py script on the second laptop, and then start this one
 
+# Import the required libraries
 import socket
 import serial
 import time

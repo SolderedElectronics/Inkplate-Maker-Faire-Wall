@@ -1,6 +1,7 @@
 # This script runs on the secondary laptop
 # It gets data from the main one via ethernet, upon recieving data it changes the image
 
+# Import the required libraries
 import socket
 import serial.tools.list_ports
 import time

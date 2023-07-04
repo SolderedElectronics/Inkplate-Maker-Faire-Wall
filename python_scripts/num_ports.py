@@ -1,6 +1,7 @@
 # Just print the number of serial ports, don't do anything else
 # Useful for debugging, as each laptop needs 30 serial connections
 
+# Import the required libraries
 import sys
 import glob
 import serial

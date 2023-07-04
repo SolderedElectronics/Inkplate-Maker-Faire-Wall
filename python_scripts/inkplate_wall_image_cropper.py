@@ -1,15 +1,17 @@
 # This crops a large image of exact dimensions to display on the wall
 
-# total width of the image needs to be 13170px
-# horizontal gaps are 130px
+# Total width of the image needs to be 13170px
+# Horizontal gaps are 130px
 
-# total height of the image needs to be 5630px
-# vertical gaps are 136 px
+# Total height of the image needs to be 5630px
+# Vertical gaps are 136 px
 
+# Import the required libraries
 from PIL import Image
 import os
 
-
+# Crop the image according to a grid with an added offset
+# The offset is the 'gap' between the individual Inkplate displays
 def crop_image_grid(image_path, crop_width, crop_height, offset_x=0, offset_y=0):
     # Open the image file
     img = Image.open(image_path)
@@ -35,11 +37,11 @@ def crop_image_grid(image_path, crop_width, crop_height, offset_x=0, offset_y=0)
 
     return cropped_images
 
-
+# Get the filename from the user
 filename = input("Enter the filename: ")
 cropped_images = crop_image_grid(filename, 1200, 825, 130, 136)
 
-# Make a folder with the filename's name
+# Make a folder and place the resulting images
 parent_directory = os.getcwd()
 new_directory = filename[:-4]
 path = os.path.join(parent_directory, new_directory)
